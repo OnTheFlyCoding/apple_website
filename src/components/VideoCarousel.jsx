@@ -47,7 +47,7 @@ const VideoCarousel = () => {
                 }))
             }
         })
-    },[])
+    },[isEnd, videoId])
 
 
     //For the actual playing of the video
