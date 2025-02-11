@@ -5,7 +5,7 @@ import Highlights from "./components/Highlights"
 function App() {
 
   return (
-    <main className="bg-black">
+    <main className="bg-black py-5">
       <Navbar/>
       <Hero/>
       <Highlights/>

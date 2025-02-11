@@ -1,26 +1,29 @@
 @import 'tailwindcss';
 
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
+@layer base{
+  *, *::before, *::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    color: white;
+    width: 100dvw;
+    overflow-x: hidden;
+    height: 100%;
+    background: #000;
+    border-color: #3b3b3b;
+    user-select: none;
+  }
+  
+  canvas {
+    touch-action: none;
+  }
 }
 
-body {
-  color: white;
-  width: 100dvw;
-  overflow-x: hidden;
-  height: 100%;
-  background: #000;
-  border-color: #3b3b3b;
-  user-select: none;
-}
 
-canvas {
-  touch-action: none;
-}
-
-.scrim-max-width {
+.screen-max-width {
   margin-inline-start: auto;
   margin-inline-end: auto;
   position: relative;
@@ -37,7 +40,7 @@ canvas {
   }
 
   .btn {
-    @apply px-5 py-2 rounded-3xl bg-blue-500 my-5 hover:bg-transparent border border-transparent hover:border hover:text-blue-500 hover:border-blue-500
+    @apply py-3 px-2 rounded-3xl bg-blue-500 my-5 hover:bg-transparent border border-transparent hover:border hover:text-blue-500 hover:border-blue-500
   }
 
   .color-container {
