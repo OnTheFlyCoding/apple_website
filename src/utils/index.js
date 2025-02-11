@@ -1,5 +1,5 @@
 import hero from "/assets/images/hero.jpeg";
-
+//import then export images/videos/svg content to be used in the components
 export const heroImg = hero;
 
 import hmv from "/assets/videos/hero.mp4";

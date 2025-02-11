@@ -1,4 +1,5 @@
 import {
+  //import media to associate the contents with
     blackImg,
     blueImg,
     highlightFirstVideo,
@@ -8,9 +9,9 @@ import {
     whiteImg,
     yellowImg,
   } from "../utils";
-  
+  //list of Nav elements to be used in dynamic 
   export const navLists = ["Store", "Mac", "iPhone", "Support"];
-  
+  //To be used in the video carousel, list of objs with its contents associated
   export const hightlightsSlides = [
     {
       id: 1,
